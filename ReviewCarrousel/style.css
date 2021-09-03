@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+html,body{
+    height: 100%;
+}
+
+.centro{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.header{
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.card{
+    margin-top: 15px;
+    width: 450px;
+    height: 400px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.foto-wrapper{
+    height: 90px;
+}
+
+.foto{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url("assets/foto1.jpg");
+    background-position: center;
+    background-size: cover;
+    z-index: 2;
+    position: relative;
+    top: -5vh;
+}
+.fundo{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: deepskyblue;
+    position: relative;
+    top: -17.8vh;
+    left: 1vh;
+    z-index: 1;
+}
+.aspas{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: deepskyblue;
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+.card-description{
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 200px;
+}
+
+p.nome{
+    text-align: center;
+    padding-bottom: 2%;
+}
+p.profissao{
+    text-align: center;
+    padding-bottom: 3%;
+    color: cadetblue;
+}
+p.person-description{
+    text-align: center;
+}
+
+.buttoes{
+    padding-top: 3%;
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.buttoes button{
+    width: 50%;
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.buttoes button.surprise{
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    height: 25px;
+    border: 1px solid yellowgreen;
+    border-radius: 15px;
+    padding-top: 2px;
+    cursor: pointer;
+    font-size: 14px;
+}
