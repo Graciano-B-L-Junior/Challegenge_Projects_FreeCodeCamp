@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Encode Sans', sans-serif;
+}
+
+html,body{
+    height: 100%;
+}
+
+header{
+    display: flex;
+    height: 15%;
+    padding: 2% 2%;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+    justify-content: space-between;
+}
+
+
+header h2{
+    text-shadow: 0 4px 3px rgba(0,0,0,0.2);
+}
+
+header h2 span{
+    color: royalblue;
+}
+
+button.menu{
+    width: 32px;
+    height: 32px;
+    border: none;
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+    color: royalblue;
+    display: none;
+}
+
+header a{
+    color: royalblue;
+    text-decoration: none;
+    padding: 0px 15px;
+    font-size: 25px;
+}
+
+header .links a{
+    color: slategray;
+}
+.sidebarMenu{
+    list-style-type: none;
+    height: 0%;
+    width: 100%;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+}
+.sidebarMenu a{
+    transition: 0.5s;
+    display: none;
+    font-size: 0px;
+    text-decoration: none;
+    color: slategray;
+    padding: 10px 0%;
+}
+
+@media screen and (max-width: 1000px){
+    header{
+        box-shadow: none;
+    }
+    .social-links{
+        display: none;
+    }
+    .links{
+        display: none;
+    }
+    button.menu{
+        display: block;
+    }
+    .deactive{
+        animation-name: menu-deactive;
+        animation-duration: 0.4s;
+    }
+    .deactive a{
+        animation-name: links-deactive;
+        animation-duration: 0.5s;
+    }
+    .active{
+        height: 220px;
+        padding-left: 10px;
+        padding-top: 10px;
+        animation-name: menu;
+        animation-duration: 0.4s;
+    }
+    .active a{
+        display: block;
+        font-size: 25px;
+        animation-name: links;
+        animation-duration: 0.5s;
+    }
+    .sidebarMenu a:hover{
+        background-color: royalblue;
+        color: white;
+    }
+}
+
+@keyframes menu{
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 220px;
+    }
+}
+@keyframes menu-deactive{
+    0%{
+        height: 220px;
+    }
+    100%{
+        height: 0px;
+    }
+}
+
+@keyframes links{
+    0%{
+        font-size: 0px;
+    }
+    100%{
+        font-size: 25px;
+        height: auto;
+    }
+}
+@keyframes links-deactive{
+    0%{
+        font-size: 25px;
+        height: auto;
+    }
+    100%{
+        font-size: 0px;
+        height: 0;
+    }
+}
