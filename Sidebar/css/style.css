@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html,body{
+    padding: 0px 0.5%;
+    height: 100%;
+    padding: 10px 10px 0px 10px;
+    background-color: royalblue;
+}
+
+.sidebar{
+    padding: 15px;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    
+}
+
+.active{
+    animation-name: sidebar;
+    animation-duration: 0.7s;
+    left: 0vw;
+}
+
+.deactive{
+    animation-name: deactiveSidebar;
+    animation-duration: 0.7s;
+    left: -35vw;
+}
+
+.sidebar ul{
+    list-style-type: none;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+
+.sidebar .top-sidebar{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.sidebar .top-sidebar p{
+    position: relative;
+    top: 7px;
+}
+.sidebar .top-sidebar button{
+    font-size: 25px;
+    color: tomato;
+}
+
+.sidebar p span{
+    color: royalblue;
+}
+
+.sidebar ul li a{
+    display: block;
+    padding: 15px 0px;
+    text-decoration: none;
+}
+
+.socialLinks{
+    position: relative;
+    top: 50%;
+}
+
+.socialLinks a{
+    text-decoration: none;
+    color: royalblue;
+    font-size: 25px;
+    padding: 10px 20px;
+}
+
+button{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+    float: right;
+    color: whitesmoke;
+}
+
+@keyframes sidebar{
+    0%{
+        left: -30vw;
+    }
+    100%{
+        left: 0vw;
+    }
+}
+@keyframes deactiveSidebar{
+    0%{
+        left: 0vw;
+    }
+    100%{
+        left: -35vw;
+    }
+}
