@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    background-image: url('/modal/img/bg.jpg');
+    background-size: cover;
+    width: 100%;
+}
+
+.modalCard{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    background-color: whitesmoke;
+    border-radius: 5%;
+    z-index: 1;
+}
+.modalCard h2{
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.modalCard button{
+    transition: 0.4s;
+    width: 30%;
+    height: 25px;
+    background-color: royalblue;
+    border-radius: 15px;
+    border: 2px solid royalblue;
+    cursor: pointer;
+    color: white;
+}
+.modalCard button:hover{
+    width: 30%;
+    height: 25px;
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid royalblue;
+    cursor: pointer;
+    color: royalblue;
+}
+
+.overlayer{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(65, 105, 225, 0.582);
+}
+
+.closeModal{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 120px;
+    background-color: whitesmoke;
+    border-radius: 5%;
+    z-index: 1;
+}
+.closeModal h2{
+    padding: 15px 0;
+}
+.closeModal button{
+    transition: 0.4s;
+    width: 30%;
+    height: 25px;
+    background-color: royalblue;
+    border-radius: 15px;
+    border: 2px solid royalblue;
+    cursor: pointer;
+    color: white;
+}
+.closeModal button:hover{
+    width: 35%;
+    height: 25px;
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid royalblue;
+    cursor: pointer;
+    color: royalblue;
+    
+}
