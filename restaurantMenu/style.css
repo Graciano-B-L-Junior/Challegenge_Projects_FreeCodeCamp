@@ -2,20 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 html,body{
     height: 100%;
+    background-color: rgba(65, 105, 225, 0.575);
 }
 
 .Menu{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.title{
-    margin-top: 10%;
+    padding-top: 40px;
 }
 
 .line{
@@ -32,6 +31,83 @@ html,body{
 }
 
 .buttons button{
+    transition: 0.7s;
     margin: 0px 5px;
-    padding: 1%;
+    padding: 1.5%;
+    border: 2px solid tan;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0);
+    color: tan;
+    cursor: pointer;
+}
+
+
+.buttons button:hover{
+    color: white;
+    background-color: tan;
+}
+
+.items-center{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    padding-left: 80px;
+    padding-top: 20px;
+}
+
+.items{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.item-lanche{
+    padding: 15px 0px;
+    width: 45%;
+}
+
+.item-lanche img{
+    border-radius: 15px;
+    border: 5px solid tan;
+}
+
+.item-lanche .item{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+}
+
+.uderline{
+    border-bottom: 1px solid tan;
+    width: 50%;
+}
+
+.item-description{
+    padding-left: 2%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.item-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item-title h3{
+    display: inline-block;
+    font-size: 18px;
+}
+
+.item-description .uderline{
+    width: 100%;
+}
+
+.item-content{
+    padding: 10px 0px;
 }
