@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-Br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,11 @@
     <link rel="stylesheet" href="style.css">
     <script src="all.js"></script>
     <link rel="stylesheet" href="all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <video autoplay muted loop id="video">
         <source src="assets/JUJUTSU KAISEN - Opening _ Kaikai Kitan.mp4" type="video/mp4">
@@ -16,16 +21,17 @@
     <div class="overlay">
         <header>
             <img src="assets/logo.png" alt="">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Serviços</a></li>
-                    <li><a href="">Memes</a></li>
-                </ul>
+            <ul>
+                <li><a>Home</a></li>
+                <li><a id="sobre" href="">Sobre</a></li>
+                <li><a id="servicos" href="">Serviços</a></li>
+                <li><a id="memes" href="">Memes</a></li>
+            </ul>
         </header>
-        <h1>Scroll Project</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet tellus lorem, at blandit ligula facilisis ac.</p>
-        <button>Veja os memes</button>
+        <h1>Scroll Project de JUJUTSU KAISEN</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet tellus lorem, at blandit ligula
+            facilisis ac.</p>
+        <button id="btnMeme">Veja os memes</button>
     </div>
     <div class="space"></div>
     <div class="sobe">
@@ -39,7 +45,23 @@
     </section>
     <section class="memes">
         <h1>Memes</h1>
+        <iframe width="400" height="300" src="https://www.youtube.com/embed/gSwVoLkbKdE" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <iframe width="400" height="300" src="https://www.youtube.com/embed/1nFlybqPzHk" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <iframe width="400" height="300" src="https://www.youtube.com/embed/bT4zVUcjHls" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
     </section>
-    <footer></footer>
+    <footer>
+        <p>Feito com <span><i class="fas fa-heart"></i></span> por Graciano Junior</p>
+    </footer>
+    <script src="app.js"></script>
 </body>
+
 </html>
