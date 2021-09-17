@@ -11,6 +11,14 @@ let conteudo = document.querySelector('.container-informacoes p')
 let links = document.querySelectorAll("a")
 links.forEach((val,index)=>{
     val.addEventListener("click",(e)=>{
+        let li = document.querySelectorAll('.conteudo ul li')
+        li.forEach((val,indice)=>{
+            if(index==indice){
+                val.classList.add("active")
+            }else{
+                val.classList.remove("active")
+            }
+        })
         e.preventDefault()
         titulo.innerHTML = titulos[index]
         conteudo.innerHTML = conteudos[index]
