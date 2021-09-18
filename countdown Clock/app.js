@@ -1,6 +1,10 @@
 let data = new Date();
 
-data.setDate(data.getDate() + 20)
+let dataSoteio = document.querySelector('.data-sorteio')
+
+
+data.setDate(data.getDate() + 2)
+dataSoteio.innerHTML = `O sorteio acaba na data ${((data.getDate() )) + "/" + ((data.getMonth() + 1)) + "/" + data.getFullYear()} com horario e tudo`
 let dias = document.querySelector('#dias')
 let horas = document.querySelector('#horas')
 let minutos = document.querySelector('#minutos')
