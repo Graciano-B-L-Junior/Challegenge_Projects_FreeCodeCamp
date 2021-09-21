@@ -1,17 +1,18 @@
 let paragrafo = document.querySelector('.gerar-Lorem')
+
 let botao = document.querySelector('.btn')
 function gerarTexto(){
+    let  input = document.getElementsByTagName('input')[0].value
     var myHeaders = new Headers();
-
-var myInit = { method: 'GET',
-               headers: myHeaders,
-               mode: 'no-cors',
-               cache: 'default' };
-    fetch('https://loripsum.net/api/10/short/headers',myInit)
+    fetch('https://baconipsum.com/api/?callback=?paras='+input)
     .then(resultado =>{
         return resultado.text()
     }).then(res=>{
-        console.log(res)
+        //console.log(res)
+        res=res.replace('[','')
+        res=res.replace(']','')
+        res=res.replace(/['"']+/g,'')
+        paragrafo.innerHTML=res
     })
     .catch(e=>{
         console.log(e)
@@ -20,4 +21,5 @@ var myInit = { method: 'GET',
 botao.addEventListener("click",()=>{
     gerarTexto()
 })
+
 
