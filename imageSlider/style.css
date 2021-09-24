@@ -16,20 +16,20 @@
 
 .imageSlider{
     border: 10px solid royalblue;
-    border-radius: 10px;
+    border-radius: 2px;
     position: absolute;
-    z-index: 1;
+    z-index: 3;
     height: 100%;
     width: 100%;
-    padding: 15px;
+    padding: 0px;
 }
 
 img{
-    position: relative;
+    position: absolute;
     width: 98%;
     height: 99%;
     z-index: 0;
-    left: 4px;
+    left: 1%;
     top: 2px;
 }
 
