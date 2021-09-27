@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+body{
+    background-color: rgb(39, 36, 83);
+}
+h1{
+    margin-top: 15px;
+    text-align: center;
+}
+
+div.placar{
+    margin-top: 50px;
+    text-align: center;
+}
+
+div.placar p{
+    margin: 0 15px;
+    display: inline-block;
+}
+
+.jokenpo{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.item{
+    cursor: pointer;
+    text-align: center;
+    margin: 0 15px;
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: royalblue;
+    font-size: 60px;
+}
+.item-escolhido{
+    color: rgb(247, 159, 45);
+    margin-top: 50%;
+    transform: translateY(-50%);
+}
