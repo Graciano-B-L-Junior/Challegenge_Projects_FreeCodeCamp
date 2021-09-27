@@ -14,6 +14,7 @@ document.querySelectorAll("button").forEach(val=>{
 })
 
 function ProximoSlider() {
+    bloqueioSlider=true;
     indiceAtual--;
     if(indiceAtual<0){
        let imgs = document.querySelectorAll("img")
@@ -28,6 +29,7 @@ function ProximoSlider() {
         posicaoImagem++
         img.style.left = `${posicaoImagem}%`
         if (posicaoImagem > 99) {
+            bloqueioSlider=false;
             clearInterval(movendo)
             img.style.zIndex="-1"
             img.style.left="1%"
@@ -39,10 +41,11 @@ function ProximoSlider() {
                 document.querySelectorAll("img")[indiceAtual].setAttribute("id","ativo")
             }
         }
-    }, 20)
+    }, 5)
 }
 
 function sliderAnterior(){
+    bloqueioSlider=true;
     indiceAtual++;
     if(indiceAtual>document.querySelectorAll("img").length-1){
         let imgs = document.querySelectorAll("img")
@@ -58,6 +61,7 @@ function sliderAnterior(){
         img.style.left = `${posicaoImagem}%`
         if (posicaoImagem < -99) {
             clearInterval(movendo)
+            bloqueioSlider=false;
             img.style.zIndex="-1"
             img.style.left="1%"
             img.removeAttribute('id')
@@ -68,5 +72,17 @@ function sliderAnterior(){
                 document.querySelectorAll("img")[indiceAtual].setAttribute("id","ativo")
             }
         }
-    }, 20)
+    }, 5)
+}
+
+function proximo(){
+    if(bloqueioSlider==false){
+        ProximoSlider();
+    }
+}
+
+function anterior(){
+    if(bloqueioSlider==false){
+        sliderAnterior();
+    }
 }
