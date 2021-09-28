@@ -9,7 +9,13 @@ body{
 }
 h1{
     margin-top: 15px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+div.placar{
+    display: flex;
+    justify-content: center;
 }
 
 div.placar{
@@ -24,7 +30,8 @@ div.placar p{
 
 .jokenpo{
     margin-top: 50px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .item{
@@ -43,4 +50,10 @@ div.placar p{
     color: rgb(247, 159, 45);
     margin-top: 50%;
     transform: translateY(-50%);
+}
+
+.textoResultado{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
 }
