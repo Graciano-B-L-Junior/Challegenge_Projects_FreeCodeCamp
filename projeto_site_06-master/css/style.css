@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html,body{
+    height: 100%;
+}
+
+.center{
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 0 2%;
+}
+
+.clear{
+    clear: both;
+}
+
+section.main{
+    background-image: url(../images/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 15px 0;
+    min-height: 700px;
+}
+
+.layer{
+    position: absolute;
+    width: 100%;
+    min-height: 700px;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+
+section.main header{
+    position: relative;
+    z-index: 2;
+}
+
+.icons-social{
+    float: right;
+}
+
+.icons-social a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 15px;
+}
+
+.logo{
+    float: left;
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+    margin-top: 15px;
+}
+
+nav.mobile{
+    display: none;
+    float: right;
+}
+
+nav.mobile ul{
+    display: block;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    list-style-type: none;
+    background: white;
+    width: 100%;
+    text-align: center;
+}
+
+nav.mobile ul li{
+    font-weight: lighter;
+    border-bottom: 1px solid #444;
+    padding: 8px 0;
+}
+nav.mobile ul li a{
+    display: block;
+    text-decoration: none;
+}
+
+nav.mobile > i{
+    position: relative;
+    top: 15px;
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+}
+
+nav.desktop{
+    float: right;
+    margin-top: 15px;
+}
+
+nav.desktop ul{
+    list-style-type: none;
+}
+
+nav.desktop ul li{
+    font-size: 17px;
+    font-weight: lighter;
+    display: inline-block;
+    margin: 0 15px;
+}
+nav.desktop ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+header{
+    border-bottom: 1px solid white;
+}
+
+.conteudo-header{
+    margin: 110px 0;
+    max-width: 700px;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.conteudo-header h2{
+    font-size: 44px;
+    font-weight: lighter;
+}
+
+.conteudo-header h2 > span{
+    color: #2692ff;
+}
+
+.conteudo-header p{
+    margin-top: 18px;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.conteudo-header a{
+    background-color: #2692ff;
+    border-radius: 20px;
+    width: 177px;
+    height: 44px;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    line-height: 44px;
+    margin-top: 44px;
+}
+
+.chamada-planos{
+    width: 100%;
+    text-align: center;
+    padding: 27px 2%;
+    background-color: rgb(220,220,220);
+}
+
+.chamada-planos h2{
+    display: inline-block;
+    border-bottom: 2px solid #2692ff;
+    color: #2692ff;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.box-planos{
+    padding: 40px 0;
+
+}
+
+.box-planos > .center{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-planos-single{
+    width: 33.3%;
+    padding: 0 30px;
+    
+}
+
+.box-planos-single p{
+    margin-left: 8px;
+    color: #777777;
+    font-size: 17px;
+    margin-top: 8px;
+}
+
+.box-planos-wraper{
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.2);
+    -webkit-box-shadow: 5px 6px 0px -2px rgba(0,0,0,0.32); 
+    box-shadow: 5px 6px 0px -2px rgba(0,0,0,0.32);
+}
+.box-planos-single h2{
+    background-color: #2692ff;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    font-weight: lighter;
+}
+
+.preco{
+    margin-top: 10px;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.preco h2{
+    font-size: 24px;
+    color: #777;
+    background-color: transparent;
+    display: inline-block;
+    border-top: 1px solid #ccc;
+    padding: 0 20px;
+}
+
+section.parallax{
+    width: 100%;
+    min-height: 300px;
+    background-image: url(../images/bg2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+section.parallax .center{
+    position: relative;
+    z-index: 2;
+    padding-top: 50px;
+}
+
+section.parallax .center h2{
+    text-align: center;
+}
+section.parallax .center p{
+    margin-top: 25px;
+}
+section.parallax .center h2 > span{
+    color: #2692ff;
+}
+
+.overlay-parallax{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0,0,0,0.85);
+    position: absolute;
+}
+
+section.final-section{
+    padding: 50px 0;
+}
+
+.w50{
+    float: left;
+    width: 48%;
+    margin: 5px 1%;
+    padding: 0 20px;
+}
+
+.contato h2{
+    font-weight: lighter;
+    color: #777777;
+    font-size: 24px;
+    position: relative;
+}
+
+.final-section h2 > .borda-efeito{
+    width: 50px;
+    height: 2px;
+    background: #777;
+    transition: 0.4s;
+}
+.final-section h2:hover > .borda-efeito{
+    width: 200px;
+    height: 2px;
+    background: #777;
+}
+
+.contato input:not([type=submit]){
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding-left: 8px;
+    margin: 15px 0;
+}
+
+.contato textarea{
+    width: 100%;
+    height: 120px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    padding-left: 8px;
+}
+
+.contato input[type=submit]{
+    cursor: pointer;
+    background: #2693ff;
+    color: white;
+    border: 0;
+    width: 100px;
+    height: 33px;
+    border-radius: 30px;
+}
+
+.equipe-single{
+    padding: 10px 8px;
+    border: 1px solid #ccc;
+    min-height: 300px;
+    -webkit-box-shadow: 5px 6px 0px -2px rgba(0,0,0,0.32); 
+    box-shadow: 5px 6px 0px -2px rgba(0,0,0,0.32);
+}
+.equipe-single  .topo-box-usuario{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.equipe-single .box-avatar{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #ccc;
+}
+
+.info-usuario{
+    display: inline-block;
+    color: #777;
+}
+
+.descricao-usuario-box{
+    font-weight: lighter;
+    color: #999999;
+    font-size: 14px;
+}
+
+footer{
+    width: 100%;
+    background: #444;
+    color: white;
+    text-align: center;
+    padding: 10px 2%;
+}
+
+@media screen and (max-width:768px){
+    .box-planos-single{
+        width: 100%;
+        margin: 15px 0;
+    }
+    .w50{
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    nav.mobile{
+        display: block;
+    }
+
+    nav.mobile > i{
+        font-size: 25px;
+        cursor: pointer;
+        color: white;
+    }
+    nav.mobile ul{
+
+        display: block;
+    }
+
+    nav.desktop{
+        display: none;
+    }
+}
