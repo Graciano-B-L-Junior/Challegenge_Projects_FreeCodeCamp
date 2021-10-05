@@ -148,11 +148,83 @@ h2 img{
 }
 
 .contato{
-    width: 100%;
     height: 85vh;
     padding: 50px;
+}
+.contato h3{
+    margin-left: 100px;
+}
+.contato > p{
+    margin-left: 100px;
+    padding: 15px 0;
+}
+.formulario{
+    position: relative;
+    width: 27vw;
+    height: 83vh;
+    background-color: cadetblue;
+    left: 60vw;
+    top: -145px;
+    border-radius: 3px;
+}
+form{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form p{
+    padding: 15px 0;
+}
+
+form input:not(input[type=submit]){
+    height: 30px;
+    padding: 15px;
+    font-size: 16px;
+}
+form h2{
+    padding: 15px 0;
+}
+form textarea{
+    padding: 10px;
+    font-size: 16px;
+    resize: none;
 }
 footer{
     height: 15vh;
     background-color: #0B1A47;
+    padding: 15px;
+    color: white;
+}
+
+footer p{
+    padding-top: 15px;
+    text-align: center;
+}
+
+input[type=submit]{
+    margin-top: 15px;
+    height: 30px;
+    width: 100px;
+    margin: 15px auto;
+    border: none;
+    cursor: pointer;
+}
+
+footer ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li{
+    margin: 0 15px;
+}
+footer ul li a{
+    color: white;
+    text-decoration: none;
+}
+footer p{
+    margin-top: 10px;
 }
